@@ -1,0 +1,67 @@
+/*
+Paleta:
+#fbdbf4
+#efb9b2
+#b9a779
+#d7c4aa
+#eee5dd
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+*{
+  background: #d7c4aa;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 110%;
+}
+
+.lugarfav p, .futuro p,ul, li, .pelicula p, a, .musica p, audio, .carrera label, .info p,.tituloYnombre p, h3, .formulario label, input, p{
+  background: initial;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lugarfav , .futuro, .pelicula, .musica, .carrera, .info, .tituloYnombre, .formulario{
+  margin: 2.5%;
+  padding: 2.5%;
+  background: #eee5dd;
+}
+
+.lugarfav iframe{
+  width: 100%;
+}
+
+.futuro p, .pelicula, .musica, .lugarfav, .tituloInfo,.tituloYnombre, .enviar{
+  text-align: center; 
+}
+
+.pelicula a, .enviar{
+  display: block;
+}
+
+progress::-webkit-progress-value {
+  background: #b9a779;
+}
+
+.elemento{
+  margin: 0.5% 2.5%;
+  padding: 0.5% 2.5%;
+  background: #eee5dd;
+}
+
+.cuadro{
+  width: 50%;
+  height: 100%;
+}
+
+footer{
+  margin: 0.5% 2.5%;
+  text-align: right;
+  font-size: 75%;
+}
+
