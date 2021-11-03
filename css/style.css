@@ -2,7 +2,7 @@
 
 
 *{
-  background-color: #FAF4F1;
+  background-color: #f4f4f1;
   font-family: 'Gochi Hand', cursive;
   font-size: 110%;
 }
@@ -17,9 +17,9 @@ img{
 .todo{
   margin: 2.5%;
   padding: 2.5%;
-  background-color: #F8F0EC;
+  background-color: #f8f0ec;
   border-style: solid;
-  border-color: #E5C8B7;
+  border-color: #e5c8b7;
   border-width: thin;
   border-radius: 10px/10px;
 }
