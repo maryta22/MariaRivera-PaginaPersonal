@@ -1,57 +1,52 @@
-/*
-Paleta:
-#fbdbf4
-#efb9b2
-#b9a779
-#d7c4aa
-#eee5dd
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
 *{
-  background: #d7c4aa;
+  background-color: #FAF4F1;
   font-family: 'Gochi Hand', cursive;
   font-size: 110%;
 }
 
-.lugarfav p, .futuro p,ul, li, .pelicula p, a, .musica p, audio, .carrera label, .info p,.tituloYnombre p, h3, .formulario label, input, p{
-  background: initial;
-}
-
 img{
   display: block;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.lugarfav , .futuro, .pelicula, .musica, .carrera, .info, .tituloYnombre, .formulario{
+.todo{
   margin: 2.5%;
   padding: 2.5%;
-  background: #eee5dd;
+  background-color: #F8F0EC;
+  border-style: solid;
+  border-color: #E5C8B7;
+  border-width: thin;
+  border-radius: 10px/10px;
+}
+
+.todo *{
+  background-color: inherit;
 }
 
 .lugarfav iframe{
   width: 100%;
 }
 
-.futuro p, .pelicula, .musica, .lugarfav, .tituloInfo,.tituloYnombre, .enviar{
+.musica, .lugarfav,.tituloYnombre, .enviar{
   text-align: center; 
 }
 
-.pelicula a, .enviar{
+.enviar{
   display: block;
 }
 
 progress::-webkit-progress-value {
-  background: #b9a779;
+  background-color: #b9a779;
 }
 
 .elemento{
   margin: 0.5% 2.5%;
   padding: 0.5% 2.5%;
-  background: #eee5dd;
 }
 
 .cuadro{
@@ -65,3 +60,16 @@ footer{
   font-size: 75%;
 }
 
+.tituloYnombre, .foto, .info, .futuro, .formulario{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.formlin{
+  border-style:dotted;
+  border-width: 10%;
+}
+
+p{
+  margin: 0%;
+}

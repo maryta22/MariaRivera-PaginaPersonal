@@ -10,10 +10,14 @@
     <meta name="author" content="María Rivera">
     <meta name="keywords" content="informacion personal, favoritos">
     <meta name="description" content="Web personal">
-
-
   </head>
   <body>
+    <header>
+      <div>
+        <a href="/index.html">Información personal</a>
+        <a href="/curriculo.html">Currículo</a>
+      </div>
+    </header>
     <div class="todo">
       <div class="tituloYnombre">
         <h3>Web personal María Rivera</h3>
@@ -26,47 +30,27 @@
 
       <!-- Añadir una foto personal -->
       <div class= "foto">
-        <img src="imagenes/foto perfil.jpeg" width="25%" height="25%">
+        <img src="imagenes/mariafoto.jpg" width="25%" height="25%">
       </div>
 
       <!-- Añadir Edad, Carrera, Hobbies -->
       <div class= "info">
-        <p class= "tituloInfo"> Información sobre mi : </p>
+        <p> Hola! </p>
         <p> Tengo 22 años </p>
         <p> Estudio la carrera de Computación </p>
-        <p> Mis hobbies son la música y el deporte </p>
-      </div>
-
-      <!-- Mostrar el avance de la carrera con una barra de progreso -->
-      <div class="carrera">
         <label for="file">Progreso de la carrera:</label>
-        <progress id="file" value="61.74" max="100"> 32% </progress>
+        <progress id="file" value="61.74" max="100"> 61.74% </progress>
+        <p> 
+          Me gusta mucho escuchar música, cantar y tocar guitarra,
+          en el siguiente enlace te dejo algunas de mis músicas favoritas:
+          <a href="musica.html" target="_blank">Click aquí</a>
+        </p>
+        <p> 
+          Me gustan mucho las orcas, aquí te dejo una página que hice 
+          acerca de ellas:
+          <a href="orcas.html" target="_blank">Click aquí</a>
+        </p>
       </div>
-
-      <!-- Añadir nombre de cancion favorita -->
-      <div class="musica">
-        <p> Mi música favorita es "My love" de westlife</p>
-
-        <!-- Añadir su cancion favorita (Reproductor de audio) -->
-        <audio controls>
-          <source src="recursos/love.mp3" type="audio/mpeg">
-          No se pudo mostrar audio
-        </audio>
-      </div>
-
-      <!-- Añadir el nombre de su pelicula favorita -->
-      <div class="pelicula">
-        <p> Mi película favorita es el señor de los anillos </p>
-      
-
-        <!-- Añadir desde youtube el trailer de su pelicula favorita [1] -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mZYms2vsm2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <!-- Incluir un enlace que redirija a la calificacion de la pelicula en Rotten Tomatoes -->
-        <a href="https://www.rottentomatoes.com/m/the_lord_of_the_rings_the_return_of_the_king" target="_blank">
-        Calificación</a>
-      </div>
-  
 
       <!-- Incluya una lista de metas a futuro -->
       <div class="futuro">
@@ -77,51 +61,40 @@
           <li> Especializarme en inteligencia artificial </li>
         </ul>
       </div>
-    
-      <!-- Incluir lugar favorito del mundo como un mapa embebido [2] -->
-      <div class="lugarfav">
-        <p>Mi lugar favorito es un lugar en Noruega llamado Seglvik, ubicado en el extremo norte del país, dentro del círculo polar ártico, digo que es mi favorito porque se pueden ver orcas y nadar con ellas.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.256288826828!2d21.22778740253221!3d70.210510973956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c5bdec07c78aab%3A0xa9cfc68566290e7e!2s9182%20Seglvik%2C%20Noruega!5e0!3m2!1ses!2sec!4v1635025806515!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-
-      <!-- Realizar un formulario de contacto -->
-      <!-- Debe contener Nombres, Apellidos, Correo, Fecha de nacimiento, Mensaje, Boton de enviar-->
-      <!-- Las etiquetas usada para cada entrada debe ser acorde al tipo de información que se ingresa -->
-      <!-- Todos los elementos del formulario deben ser obligatorios -->
       <form class="formulario">
           <p>
-            Contáctese conmigo :
+            Si quieres contactarte conmigo déjame un mensaje:
           </p>
         <div class="elemento" >
           <label for="nombre">Nombres:</label>
-          <input type="text" name= "nombres" required>
+          <input type="text" name= "nombres" class="formlin" required>
         </div>
         <div class="elemento" >
           <label for="fname">Apellidos:</label>
-          <input type="text" name= "apellidos" required>
+          <input type="text" name= "apellidos" class="formlin" required>
         </div>
         <div class="elemento">
           <label for="fname">Correo:</label>
-          <input type="email" name="correo" required>
+          <input type="email" name="correo" class="formlin" required>
         </div>
         <div class="elemento">
           <label for="fname">Fecha de nacimiento:</label>
-          <input type="date" name = "fechaNacimiento" required>
+          <input type="date" name = "fechaNacimiento" class="formlin" required>
         </div>
         <div class="elemento">
           <label for="fname">Mensaje:</label>
-          <input type="text" name = "mensaje" class="cuadro" required>
+          <input type="text" name = "mensaje" class="cuadro formlin"  required>
         </div>
         <div class="elemento enviar">
           <input type="submit" value="Enviar">
         </div>
       </form>
       <!-- Añadir pie de pagina, Año - copyright y nombre de autor -->
-      <footer>
-        <p>Autora: María Rivera</p>
-        <p><a href="mailto:marrcarr@espol.edu.ec">marrcarr@espol.edu.ec</a></p>
-      </footer>
     </div>
     <script src="js/script.js"></script>
   </body>
+  <footer>
+    <p>Autora: María Rivera</p>
+    <p><a href="mailto:marrcarr@espol.edu.ec">marrcarr@espol.edu.ec</a></p>
+  </footer>
 </html>
