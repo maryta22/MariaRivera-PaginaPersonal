@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>María</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Añadir informacion meta: autor, kewywords, descripcion -->
+    <meta name="author" content="María Rivera">
+    <meta name="keywords" content="informacion personal, favoritos">
+    <meta name="description" content="Web personal">
+  </head>
+
+
+  <body class="body">
+    <header>
+      <div class="encabezado">
+        <a href="/index.html">Información personal</a>
+        <a href="/secciones/curriculo.html">Currículo</a>
+      </div>
+    </header>
+    <div class="todo">
+      <div class="tituloYnombre">
+        <h3>Web personal María Rivera</h3>
+        <p> María Cecilia Rivera Carrión </p>
+      </div>
+
+      <div class= "foto">
+        <img src="/imagenes/mariafoto.jpg">
+      </div>
+
+      <div class= "info">
+        <p> Hola! </p>
+        <p> Tengo 22 años </p>
+        <p> Estudio la carrera de Computación </p>
+        <label for="file">Progreso de la carrera:</label>
+        <progress id="file" value="61.74" max="100"> 61.74% </progress>
+        <p> 
+          Me gusta mucho escuchar música, cantar y tocar guitarra,
+          en el siguiente enlace te dejo algunas de mis músicas favoritas:
+          <a href="/enlaces/musica.html" target="_blank">Click aquí</a>
+        </p>
+        <p> 
+          Me gustan mucho las orcas, aquí te dejo una página que hice 
+          acerca de ellas:
+          <a href="/enlaces/orcas.html" target="_blank">Click aquí</a>
+        </p>
+      </div>
+
+      <div class="futuro">
+        <p> Cosas que me gustarían hacer: </p>
+        <ul>
+          <li> Estudiar una carrea de producción musical </li>
+          <li> Ver orcas </li>
+          <li> Especializarme en inteligencia artificial </li>
+        </ul>
+      </div>
+
+      <form  class="formulario" onSubmit="return enviar()">
+          <p>
+            Si quieres contactarte conmigo déjame un mensaje:
+          </p>
+        <div class="elemento" >
+          <label for="nombre">Nombres:</label>
+          <input type="text" name= "nombres" class="formlin" required>
+        </div>
+        <div class="elemento" >
+          <label for="fname">Apellidos:</label>
+          <input type="text" name= "apellidos" class="formlin" required>
+        </div>
+        <div class="elemento">
+          <label for="fname">Correo:</label>
+          <input type="email" name="correo" class="formlin" required>
+        </div>
+        <div class="elemento">
+          <label for="fname">Fecha de nacimiento:</label>
+          <input type="date" name = "fechaNacimiento" class="formlin" required>
+        </div>
+        <div class="elemento">
+          <label for="fname">Mensaje:</label>
+          <input type="text" name = "mensaje" class="cuadro formlin" required >
+        </div>
+        <div class="elemento enviar">
+          <input type="submit" id ="btnLoad">
+        </div>
+        <div id="cargando"><p>Cargando...</p></div>
+        <div id="myContent"></div>
+      </form>
+    </div>
+    <script src="/js/confirmar.js"></script>
+  </body>
+  <!-- Añadir pie de pagina, Año - copyright y nombre de autor -->
+  <footer>
+    <p>Autora: María Rivera</p>
+    <p><a href="mailto:marrcarr@espol.edu.ec">marrcarr@espol.edu.ec</a></p>
+  </footer>
+</html>
