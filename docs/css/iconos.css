@@ -1,0 +1,46 @@
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3b59aa;
+    color: white;
+}
+
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-instagram {
+    background: #df6d35;
+    color: white;
+}
+
+.fa-youtube {
+    background: #ce6161;
+    color: white;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.redes{
+    text-align: center;
+}

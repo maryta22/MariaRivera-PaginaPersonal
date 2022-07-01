@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>María</title>
-    <link href="~/docs/css/style.css" rel="stylesheet" type="text/css" />
+<html>
 
-    <!-- Añadir informacion meta: autor, kewywords, descripcion -->
-    <meta name="author" content="María Rivera">
-    <meta name="keywords" content="informacion personal, favoritos">
-    <meta name="description" content="Web personal">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>María</title>
+  <link href="/docs/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/docs/css/iconos.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Añadir informacion meta: autor, kewywords, descripcion -->
+  <meta name="author" content="María Rivera">
+  <meta name="keywords" content="informacion personal, favoritos">
+  <meta name="description" content="Web personal">
+</head>
 
+<body>
+  <div class="grid-container">
 
-  <body class="body">
-    <header>
-      <div class="encabezado">
-        <a href="/docs/">Información personal</a>
-        <a href="/docs/secciones/curriculo.html">Currículo</a>
-      </div>
-    </header>
-    <div class="todo">
+    <div class="item1">
+      <a class="enlacenavegacion" href="/docs/">Información personal</a>
+      <a class="enlacenavegacion" href="/docs/secciones/curriculo.html">Currículo</a>
+      <a class="enlacenavegacion" href="">Blog Personal</a>
+    </div>
+
+    <div class="item2">
+      <p>Blogs de :</p>
+      <p><a>Computación Básica</a></p>
+      <p><a>HTML</a></p>
+      <p><a>CSS</a></p>
+      <p><a>Javascript</a></p>
+      <p><a>React</a></p>
+      <p><a>Inteligencia Artificial</a></p>
+    </div>
+
+    <div class="item3">
       <div class="tituloYnombre">
         <h3>Web personal María Rivera</h3>
         <p> María Cecilia Rivera Carrión </p>
       </div>
 
-      <div class= "foto">
-        <img src="/cliente/imagenes/mariafoto.jpg">
+      <div class="foto">
+        <img src="/docs/recursos/imagenes/mariafoto.png">
       </div>
-
-      <div class= "info">
-        <p> Hola! </p>
-        <p> Tengo 22 años </p>
-        <p> Estudio la carrera de Computación </p>
+      <div class = "redes">
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+      <div class="info todo">
+        <p> Hola!, Me llamo María Rivera, engo 23 años y estudio la carrera de Ciencias de Computación en la
+          <a>ESPOL</a>
+        </p>
         <label for="file">Progreso de la carrera:</label>
-        <progress id="file" value="61.74" max="100"> 61.74% </progress>
-        <p> 
+        <progress id="file" value="70.43" max="100"> 61.74% </progress>
+        <p>
           Me gusta mucho escuchar música, cantar y tocar guitarra,
           en el siguiente enlace te dejo algunas de mis músicas favoritas:
           <a href="/docs/enlaces/musica.html" target="_blank">Click aquí</a>
         </p>
-        <p> 
-          Me gustan mucho las orcas, aquí te dejo una página que hice 
+        <p>
+          Me gustan mucho las orcas, aquí te dejo una página que hice
           acerca de ellas:
           <a href="/docs/enlaces/orcas.html" target="_blank">Click aquí</a>
         </p>
@@ -57,17 +75,18 @@
         </ul>
       </div>
 
-      <form  class="formulario" onSubmit="return enviar()">
-          <p>
-            Si quieres contactarte conmigo déjame un mensaje:
-          </p>
-        <div class="elemento" >
+      <form class="formulario" onSubmit="return enviar()">
+        <p>
+          Si quieres contactarte conmigo déjame un mensaje en el siguiente formulario :) pero también te dejo mis redes
+          sociales:
+        </p>
+        <div class="elemento">
           <label for="nombre">Nombres:</label>
-          <input type="text" name= "nombres" class="formlin" required>
+          <input type="text" name="nombres" class="formlin" required>
         </div>
-        <div class="elemento" >
+        <div class="elemento">
           <label for="fname">Apellidos:</label>
-          <input type="text" name= "apellidos" class="formlin" required>
+          <input type="text" name="apellidos" class="formlin" required>
         </div>
         <div class="elemento">
           <label for="fname">Correo:</label>
@@ -75,24 +94,34 @@
         </div>
         <div class="elemento">
           <label for="fname">Fecha de nacimiento:</label>
-          <input type="date" name = "fechaNacimiento" class="formlin" required>
+          <input type="date" name="fechaNacimiento" class="formlin" required>
         </div>
         <div class="elemento">
           <label for="fname">Mensaje:</label>
-          <input type="text" name = "mensaje" class="cuadro formlin" required >
+          <input type="text" name="mensaje" class="cuadro formlin" required>
         </div>
         <div class="elemento enviar">
-          <input type="submit" id ="btnLoad">
+          <input type="submit" id="btnLoad">
         </div>
-        <div id="cargando"><p>Cargando...</p></div>
+        <div id="cargando">
+          <p>Cargando...</p>
+        </div>
         <div id="myContent"></div>
       </form>
     </div>
-    <script src="/docs/js/confirmar.js"></script>
-  </body>
-  <!-- Añadir pie de pagina, Año - copyright y nombre de autor -->
-  <footer>
-    <p>Autora: María Rivera</p>
-    <p><a href="mailto:marrcarr@espol.edu.ec">marrcarr@espol.edu.ec</a></p>
-  </footer>
+
+    <div class="item4">
+      <p>Recomendaciones: </p>
+      <p><a>Cursos de HTML: </a></p>
+    </div>
+
+    <div class="item5">
+      <p>Autora: María Rivera</p>
+      <p><a href="mailto:maria.mariaog.rivera@gmail.com">maria.mariaog.rivera@gmail.com</a></p>
+    </div>
+
+  </div>
+  <script src="/docs/js/confirmar.js"></script>
+</body>
+
 </html>
