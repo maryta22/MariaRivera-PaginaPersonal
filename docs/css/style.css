@@ -19,7 +19,7 @@
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
+    'menu main main main right right '
     'menu footer footer footer footer footer';
 
   background-color: #ffffff;
@@ -83,11 +83,6 @@ progress::-webkit-progress-value {
   padding-bottom: 2%;
 }
 
-.formlin{
-  border-style:dotted;
-  border-width: 10%;
-}
-
 .orcafond{
   background: initial;
   background-image: url(/imagenes/orquita.jpg);
@@ -95,11 +90,17 @@ progress::-webkit-progress-value {
 }
 
 .enlacenavegacion{
-  margin-right: 2%;
   font-size: 120%;
   text-decoration: none;
 }
 
 .item1{
   background-color: rgb(192, 192, 192);
+  display: flex;
+  justify-content: space-around;
+}
+
+.videos{
+  width: 100%;
+  height: auto;
 }
