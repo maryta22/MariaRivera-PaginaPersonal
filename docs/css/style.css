@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-
 *, *:before, *::after{
   box-sizing: border-box;
 }
@@ -9,26 +7,33 @@
   font-size: 105%;
 }
 
+body{
+  margin: 0%;
+}
+
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right '
-    'menu footer footer footer footer footer';
+    'main main main main main main '
+    'footer footer footer footer footer footer';
 
   background-color: #ffffff;
   
 }
 
-.grid-container > div, .ite1 , .item2 {
+.item3, .item2 {
   padding: 10px;
   margin: 10px;
+}
+
+.item1 > span{
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 a:hover {
@@ -45,15 +50,10 @@ a:visited {
 
 img{
   display: block;
-  width: 20%;
+  width: 15%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px/10px;
-}
 
-.lugarfav iframe{
-  width: 35%;
-  padding: 5% 0;
 }
 
 .musica, .lugarfav,.tituloYnombre, .enviar{
@@ -79,14 +79,8 @@ progress::-webkit-progress-value {
 }
 
 .tituloYnombre, .foto, .info, .futuro, .formulario{
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.orcafond{
-  background: initial;
-  background-image: url(/imagenes/orquita.jpg);
-  background-size: cover;
+  padding-top: .5%;
+  padding-bottom: .5%;
 }
 
 .enlacenavegacion{
@@ -98,9 +92,4 @@ progress::-webkit-progress-value {
   background-color: rgb(192, 192, 192);
   display: flex;
   justify-content: space-around;
-}
-
-.videos{
-  width: 100%;
-  height: auto;
 }
